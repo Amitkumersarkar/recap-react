@@ -56,4 +56,4 @@ console.log(student.profession);
 // access by property name string
 console.log(student['name']);
 // access by property name in a variable
-console.log(student[myVariable]);
+// console.log(student[myVariable]);
