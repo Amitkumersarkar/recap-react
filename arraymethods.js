@@ -17,3 +17,17 @@ const names = products.map(product => product.name);
 // if nothing is returned then we can used foreach
 products.forEach(product => console.log(product));
 products.forEach(product => console.log(product.color));
+
+// multiline forEach 
+
+// products.forEach(product => {
+
+// });
+
+// filter 
+
+const cheap = products.filter(product => product.price <= 2000);
+// console.log(cheap);
+
+const specificName = products.filter(product => product.name.includes('l'));
+console.log(specificName);
