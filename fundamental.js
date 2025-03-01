@@ -8,14 +8,14 @@ season = 'winter';
 // multiple conditions: &&, ||
 
 if (fatherName === 'Anonda' || season === 'summer') {
-    console.log(season);
+    // console.log(season);
 
 }
 else if (fatherName === 'Anonda') {
-    console.log(fatherName);
+    // console.log(fatherName);
 }
 else {
-    console.log(season);
+    // console.log(season);
 }
 
 // array declaration
@@ -26,7 +26,22 @@ numbers[0] = 50;
 
 //for loop declaration
 for (let i = 0; i < numbers.length; i++) {
-    const numbers = numbers[i];
-    console.log(numbers);
+    const number = numbers[i];
+    // console.log(numbers);
 }
+
+// function declaration system
+function multiply(num1, num2) {
+    const result = num1 * num2;
+    return result;
+}
+
+// calling the function
+
+const output = multiply(10, 2);
+
+console.log(output);
+
+// object declaration system
+
 
