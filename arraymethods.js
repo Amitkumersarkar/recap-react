@@ -6,9 +6,14 @@ const products = [
 
 ];
 
+// array of objects
 const brands = products.map(product => product.brand);
 const prices = products.map(product => product.price);
 const names = products.map(product => product.name);
-console.log(names);
-console.log(brands);
-console.log(prices);
+// console.log(names);
+// console.log(brands);
+// console.log(prices);
+
+// if nothing is returned then we can used foreach
+products.forEach(product => console.log(product));
+products.forEach(product => console.log(product.color));
