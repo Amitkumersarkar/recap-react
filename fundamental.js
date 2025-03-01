@@ -3,7 +3,7 @@ const fatherName = 'Anonda';
 let season = 'summer';
 season = 'winter';
 
-// conditions:
+// conditions apply system:
 // 6 basic conditions: >,<,>=,<=,&&,||,===,!==
 // multiple conditions: &&, ||
 
@@ -18,16 +18,16 @@ else {
     // console.log(season);
 }
 
-// array declaration
+// array declaration system
 // index,length, push,pop,
 const numbers = [10, 20, 3, 40];
 // changing index number
 numbers[0] = 50;
 
-//for loop declaration
+//for loop declaration system
 for (let i = 0; i < numbers.length; i++) {
     const number = numbers[i];
-    // console.log(numbers);
+    // console.log(number);
 }
 
 // function declaration system
@@ -43,5 +43,13 @@ const output = multiply(10, 2);
 console.log(output);
 
 // object declaration system
-
+//3ways to access property by name
+const student = {
+    name: 'amit',
+    age: 24,
+    student: true,
+    profession: ['jr software developer', 25000,]
+}
+// access the property here
+console.log(student.profession);
 
