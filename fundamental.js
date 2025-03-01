@@ -51,5 +51,9 @@ const student = {
     profession: ['jr software developer', 25000,]
 }
 // access the property here
+// direct by property
 console.log(student.profession);
-
+// access by property name string
+console.log(student['name']);
+// access by property name in a variable
+console.log(student[myVariable]);
