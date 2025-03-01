@@ -24,10 +24,15 @@ products.forEach(product => console.log(product.color));
 
 // });
 
-// filter 
+// filter method
 
 const cheap = products.filter(product => product.price <= 2000);
 // console.log(cheap);
 
-const specificName = products.filter(product => product.name.includes('l'));
-console.log(specificName);
+const specificName = products.filter(p => p.name.includes('l'));
+// console.log(specificName);
+
+// Find method
+
+const special = products.find(p => p.name.includes('s'));
+console.log(special);
