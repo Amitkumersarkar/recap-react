@@ -6,3 +6,9 @@ if (money > 2000) {
 else {
     tour = 'homeTown';
 }
+
+// ternary 
+
+let tour2 = money > 1500 ? 'tour sitakundu' : 'chittagong';
+console.log(tour2);
+
