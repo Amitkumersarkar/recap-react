@@ -7,7 +7,7 @@ else {
     tour = 'homeTown';
 }
 
-// ternary 
+// ternary operator
 
 let tour2 = money > 1500 ? 'tour sitakundu' : 'chittagong';
 console.log(tour2);
