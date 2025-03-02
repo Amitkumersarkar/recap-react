@@ -5,3 +5,4 @@ const showUser = () => console.log('display User');
 const hideUser = () => console.log('hide User');
 
 isActive ? showUser() : hideUser();
+// isActive && showUser();
