@@ -6,8 +6,10 @@ const addToLocalStorage = () => {
 
 
     // adding local storage
+    if (id && value) {
 
-    localStorage.setItem(id, value);
+        localStorage.setItem(id, value);
+    }
     idInput.value = '';
     valueInput.value = '';
 }
