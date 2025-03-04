@@ -10,7 +10,10 @@ function App() {
       <Device></Device>
       <Device></Device>
       <Device name='laptop'></Device>
-      <Todo></Todo>
+      <Todo task=" learn React"></Todo>
+      <Todo task=" learn typescript"></Todo>
+      <Todo task=" learn Next js"></Todo>
+      <Todo task="isDone"></Todo>
     </>
   )
 }
