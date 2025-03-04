@@ -9,6 +9,7 @@ function App() {
     <>
       <Person></Person>
       <Student></Student>
+      <Developer></Developer>
     </>
   )
 }
@@ -20,8 +21,23 @@ function Person() {
 
 function Student() {
   return (
-    <div>
+    <div className='student'>
       <h3>i am a student</h3>
+    </div>
+  )
+}
+function Developer() {
+  const developerStyle = {
+    margin: '15px',
+    padding: '20px',
+    border: '2px solid blue',
+    borderRadius: '10px'
+  }
+  return (
+    <div style={developerStyle}>
+      <h3>post : jr. react developer</h3>
+      <h3>company name : ridax.co</h3>
+      <h3>salary : 1000 usd</h3>
     </div>
   )
 }
