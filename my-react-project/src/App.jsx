@@ -12,7 +12,7 @@ function App() {
       <Developer></Developer>
       <Device></Device>
       <Device></Device>
-      <Device ></Device>
+      <Device name='laptop'></Device>
     </>
   )
 }
@@ -45,7 +45,8 @@ function Developer() {
   )
 }
 
-function Device() {
+function Device(props) {
+  console.log(props)
   return (
     <div>
       <h3>this device : phone</h3>
