@@ -10,6 +10,9 @@ function App() {
       <Person></Person>
       <Student></Student>
       <Developer></Developer>
+      <Device></Device>
+      <Device></Device>
+      <Device ></Device>
     </>
   )
 }
@@ -38,6 +41,14 @@ function Developer() {
       <h3>post : jr. react developer</h3>
       <h3>company name : ridax.co</h3>
       <h3>salary : 1000 usd</h3>
+    </div>
+  )
+}
+
+function Device() {
+  return (
+    <div>
+      <h3>this device : phone</h3>
     </div>
   )
 }
