@@ -10,6 +10,7 @@ function App() {
       <Device></Device>
       <Device></Device>
       <Device name='laptop'></Device>
+      <Todo></Todo>
     </>
   )
 }
