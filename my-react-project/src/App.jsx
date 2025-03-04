@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Person></Person>
-      <Student></Student>
+      <Student grade="9" score="90"></Student>
       <Developer></Developer>
       <Device></Device>
       <Device></Device>
@@ -22,7 +22,8 @@ function Person() {
   return <h3>my name is {person.name} and my age is : {age}</h3>
 }
 
-function Student() {
+function Student(props) {
+  console.log(props);
   return (
     <div className='student'>
       <h3>i am a student</h3>
