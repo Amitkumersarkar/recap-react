@@ -6,12 +6,18 @@ export default function Counter() {
         const newCount = count + 1;
         setCount(newCount);
     }
+
+    const HandleReduce = () => {
+        const newCount = count - 1;
+        setCount(newCount);
+    }
     return (
         <div style={{
             border: '2px solid green'
         }}>
             <h2>Counter:{count} </h2>
             <button onClick={HandleAdd}>Add Number</button>
+            <button onClick={HandleReduce}>Reduce</button>
         </div >
     )
 }
