@@ -20,7 +20,7 @@ function App() {
         <h2>react core concept 2.0</h2>
         <button onClick={HandleClick}>Click Here</button>
         <button onClick={HandleClick2}>Click Here</button>
-        <button>Hello, What's up..?</button>
+        <button onClick={() => addToFive(5)}>Click Me</button>
       </div>
     </>
   )
