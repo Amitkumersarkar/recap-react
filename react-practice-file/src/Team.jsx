@@ -1,9 +1,17 @@
 export default function Team() {
+    // apply css using js type
+    const teamStyle = {
+        border: '2px solid Pink',
+        padding: '14px',
+        margin: '15px',
+        borderRadius: '4px',
 
+    }
     return (
-        <div>
+        // css apply here
+        <div style={teamStyle}>
             <h2>Player : </h2>
-            <button>Hire Me</button>
+            <button>Hire Team</button>
         </div>
     )
 }
