@@ -5,6 +5,11 @@ export default function Team() {
     // state declared here
     const [team, setTeam] = useState(11);
 
+    // declare event handler 
+    const handleAdd = () => {
+        const newTeam = team + 1;
+        setTeam(newTeam);
+    }
 
     // apply css using js type
     const teamStyle = {
@@ -18,7 +23,8 @@ export default function Team() {
         // css apply here
         <div style={teamStyle}>
             <h2>Player : {team}</h2>
-            <button>Hire Team</button>
+            <button onClick={handleAdd}>Add Player</button>
+            <button>Remove Player</button>
         </div>
     )
 }
