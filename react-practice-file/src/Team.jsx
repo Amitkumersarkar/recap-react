@@ -5,9 +5,15 @@ export default function Team() {
     // state declared here
     const [team, setTeam] = useState(11);
 
-    // declare event handler 
+    // declare event handler to add team
     const handleAdd = () => {
         const newTeam = team + 1;
+        setTeam(newTeam);
+    }
+    // declare event handler to remove team
+
+    const handleRemove = () => {
+        const newTeam = team - 1;
         setTeam(newTeam);
     }
 
@@ -24,7 +30,7 @@ export default function Team() {
         <div style={teamStyle}>
             <h2>Player : {team}</h2>
             <button onClick={handleAdd}>Add Player</button>
-            <button>Remove Player</button>
+            <button onClick={handleRemove}>Remove Player</button>
         </div>
     )
 }
