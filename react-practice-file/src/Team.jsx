@@ -1,4 +1,11 @@
+import { useState } from "react"
+
 export default function Team() {
+
+    // state declared here
+    const [team, setTeam] = useState(11);
+
+
     // apply css using js type
     const teamStyle = {
         border: '2px solid Pink',
@@ -10,7 +17,7 @@ export default function Team() {
     return (
         // css apply here
         <div style={teamStyle}>
-            <h2>Player : </h2>
+            <h2>Player : {team}</h2>
             <button>Hire Team</button>
         </div>
     )
