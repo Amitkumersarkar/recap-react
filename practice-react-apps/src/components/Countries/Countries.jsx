@@ -12,7 +12,7 @@ const Countries = () => {
             .then(data => setCountries(data))
     }, [])
     return (
-        <div>
+        <div className="country-container">
             <h3>Countries : {countries.length}</h3>
             {
                 // use loop to make new components
