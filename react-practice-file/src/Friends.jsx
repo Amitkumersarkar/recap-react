@@ -13,7 +13,7 @@ export default function Friends() {
         <div className='box'>
             <h3>Friends : {friends.length}</h3>
             {
-                friends.map(friend => <Friend></Friend>)
+                friends.map(friend => <Friend friend={friend}></Friend>)
             }
         </div>
     )
@@ -25,3 +25,5 @@ export default function Friends() {
 // step3 : use fetch to load data
 // step4 : loaded data to the state
 // step5 : to show all data we can use loop then use map
+// step6 : send data to the Friend components in the map section
+// step7 : destructure friends objects
