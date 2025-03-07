@@ -12,13 +12,15 @@ const Countries = () => {
             .then(data => setCountries(data))
     }, [])
     return (
-        <div className="country-container">
+        <div >
             <h3>Countries : {countries.length}</h3>
-            {
-                // use loop to make new components
-                countries.map(country =>
-                    <Country key={country.cca3} country={country}></Country>)
-            }
+            <div className="country-container">
+                {
+                    // use loop to make new components
+                    countries.map(country =>
+                        <Country key={country.cca3} country={country}></Country>)
+                }
+            </div>
         </div>
     );
 };
