@@ -5,8 +5,8 @@ function App() {
   return (
     <>
       <div>
-        <h2> my react practice section</h2>
-        
+        <h2></h2>
+
       </div>
     </>
   )
