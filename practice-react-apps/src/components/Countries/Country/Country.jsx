@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../Country.css'
-const Country = ({ country }) => {
+const Country = ({ country, handleVisitedCountry }) => {
     // destructuring here
     const { name, flags, population, area, cca3 } = country;
 
@@ -11,6 +11,8 @@ const Country = ({ country }) => {
     const handleVisited = () => {
         setVisited(!visited);
     }
+
+    console.log(handleVisitedCountry);
 
     const handleVisitedCountry = () => {
         // setVisitedCountries(visited);

@@ -18,14 +18,19 @@ const Countries = () => {
                 {/* visited countries list bar */}
                 <h2>Visited Countries : </h2>
                 <ul>
-                    
+
                 </ul>
             </div>
             <div className="country-container">
                 {
                     // use loop to make new components
                     countries.map(country =>
-                        <Country key={country.cca3} country={country}></Country>)
+                        <Country
+                            key={country.cca3}
+                            handleVisitedCountry={handleVisitedCountry}
+                            country={country}>
+
+                        </Country>)
                 }
             </div>
         </div>
