@@ -27,7 +27,7 @@ const Countries = () => {
                     countries.map(country =>
                         <Country
                             key={country.cca3}
-                            handleVisitedCountry={handleVisitedCountry}
+                            // handleVisitedCountry={handleVisitedCountry}
                             country={country}>
 
                         </Country>)
