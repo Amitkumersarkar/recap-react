@@ -14,6 +14,13 @@ const Countries = () => {
     return (
         <div >
             <h3>Countries : {countries.length}</h3>
+            <div>
+                {/* visited countries list bar */}
+                <h2>Visited Countries</h2>
+                <ul>
+                    
+                </ul>
+            </div>
             <div className="country-container">
                 {
                     // use loop to make new components
