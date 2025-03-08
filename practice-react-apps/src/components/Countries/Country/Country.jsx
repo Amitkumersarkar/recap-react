@@ -15,7 +15,7 @@ const Country = ({ country }) => {
 
 
     const handleVisitedCountry = () => {
-        setVisitedCountries(visited);
+        setVisitedCountries(visitedCountries);
 
     }
 
