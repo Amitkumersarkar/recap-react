@@ -5,9 +5,17 @@ const Country = ({ country }) => {
     const { name, flags, population, area, cca3 } = country;
 
     const [visited, setVisited] = useState(false);
+    // state declared for visited countries list
+    const [visitedCountries, setVisitedCountries] = useState([]);
 
     const handleVisited = () => {
         setVisited(!visited);
+    }
+
+    const handleVisitedCountry = () => {
+        // setVisitedCountries(visited);
+        console.log('add this to your visited country');
+        console.log(country);
     }
 
     return (
@@ -17,6 +25,7 @@ const Country = ({ country }) => {
             <p>Population : {population}</p>
             <p>Area : {area}</p>
             <p><small>Code : {cca3}</small></p>
+            <button>Mark Visited</button>
             <button onClick={handleVisited}>{visited ? 'Visited' : 'Not visited'}</button>
             {visited ? ' i have visited this country.' : ' I have to visit this country very soon'}
         </div>
