@@ -14,9 +14,11 @@ const Countries = () => {
     return (
         <div >
             <h3>Countries : {countries.length}</h3>
+
+            {/* visited countries list bar */}
             <div>
-                {/* visited countries list bar */}
-                <h2>Visited Countries : </h2>
+
+                <h4>Visited Countries : </h4>
                 <ul>
 
                 </ul>
