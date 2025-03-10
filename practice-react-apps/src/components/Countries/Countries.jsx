@@ -39,6 +39,7 @@ const Countries = () => {
                 <h4>Visited Countries : {visitedCountries.length} </h4>
                 <ul>
                     {
+                        // show all added country
                         visitedCountries.map(country => <li key={country.cca3}>
                             {country.name.common}
                         </li>)
