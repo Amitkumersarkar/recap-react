@@ -5,12 +5,25 @@ import Country from "./Country/Country";
 const Countries = () => {
     // to store data in useState
     const [countries, setCountries] = useState([]);
+
+    // state declared for visited countries list
+    const [visitedCountires, setVisitedCountries] = useState([]);
+
     // to load data in useEffect
     useEffect(() => {
         fetch('https://restcountries.com/v3.1/all')
             .then(res => res.json())
             .then(data => setCountries(data))
     }, [])
+
+    // mark visited btn Event handler function
+
+    const handleVisitedCountry = country => {
+        console.log('Add This To Your Visited Country')
+        console.log(country);
+    }
+
+
     return (
         <div >
             <h3>Countries : {countries.length}</h3>
@@ -29,7 +42,8 @@ const Countries = () => {
                     countries.map(country =>
                         <Country
                             key={country.cca3}
-                            // handleVisitedCountry={handleVisitedCountry}
+                            // send profs validation
+                            handleVisitedCountry={handleVisitedCountry}
                             country={country}>
 
                         </Country>)

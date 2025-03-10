@@ -1,23 +1,17 @@
 import { useState } from 'react';
 import '../Country.css'
-const Country = ({ country }) => {
+
+// destructuring here
+const Country = ({ country, handleVisitedCountry }) => {
     // destructuring here
     const { name, flags, population, area, cca3 } = country;
 
-    const [visited, setVisited] = useState(false);
-    // state declared for visited countries list
-    const [visitedCountries, setVisitedCountries] = useState([]);
-
+    const [visited, setVisited] = useState([]);
     const handleVisited = () => {
         setVisited(!visited);
     }
 
-
-
-    const handleVisitedCountry = () => {
-        setVisitedCountries(visitedCountries);
-
-    }
+    console.log(handleVisitedCountry);
 
     return (
         <div className={`country ${visited && 'visited'}`}>
