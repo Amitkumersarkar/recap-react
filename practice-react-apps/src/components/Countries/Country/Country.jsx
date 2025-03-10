@@ -4,6 +4,7 @@ import '../Country.css'
 // destructuring here
 const Country = ({ country, handleVisitedCountry }) => {
     // destructuring here
+    // props
     const { name, flags, population, area, cca3 } = country;
 
     const [visited, setVisited] = useState([]);
@@ -11,7 +12,10 @@ const Country = ({ country, handleVisitedCountry }) => {
         setVisited(!visited);
     }
 
-    console.log(handleVisitedCountry);
+    const passWithParams = () => {
+        handleVisitedCountry(country);
+    }
+    // console.log(handleVisitedCountry);
 
     return (
         <div className={`country ${visited && 'visited'}`}>
@@ -21,7 +25,7 @@ const Country = ({ country, handleVisitedCountry }) => {
             <p>Area : {area}</p>
             <p><small>Code : {cca3}</small></p>
 
-            <button onClick={handleVisitedCountry}>Mark Visited</button>
+            <button onClick={passWithParams}>Mark Visited</button>
 
             <button onClick={handleVisited}>{visited ? 'Visited' : 'Not visited'}</button>
             {visited ? ' i have visited this country.' : ' I have to visit this country very soon'}

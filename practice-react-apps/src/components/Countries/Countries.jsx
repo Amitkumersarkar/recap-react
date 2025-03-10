@@ -20,7 +20,7 @@ const Countries = () => {
 
     const handleVisitedCountry = country => {
         console.log('Add This To Your Visited Country')
-        console.log(country);
+        // console.log(country);
     }
 
 
@@ -42,7 +42,7 @@ const Countries = () => {
                     countries.map(country =>
                         <Country
                             key={country.cca3}
-                            // send profs validation
+                            // send props validation
                             handleVisitedCountry={handleVisitedCountry}
                             country={country}>
 
