@@ -12,9 +12,10 @@ const Country = ({ country, handleVisitedCountry }) => {
         setVisited(!visited);
     }
 
-    const passWithParams = () => {
-        handleVisitedCountry(country);
-    }
+    // declared this function to send parameter
+    // const passWithParams = () => {
+    //     handleVisitedCountry(country);
+    // }
     // console.log(handleVisitedCountry);
 
     return (
@@ -24,8 +25,8 @@ const Country = ({ country, handleVisitedCountry }) => {
             <p>Population : {population}</p>
             <p>Area : {area}</p>
             <p><small>Code : {cca3}</small></p>
-
-            <button onClick={passWithParams}>Mark Visited</button>
+            {/* declared this event handler to send parameter  */}
+            <button onClick={() => handleVisitedCountry(country)}>Mark Visited</button>
 
             <button onClick={handleVisited}>{visited ? 'Visited' : 'Not visited'}</button>
             {visited ? ' i have visited this country.' : ' I have to visit this country very soon'}

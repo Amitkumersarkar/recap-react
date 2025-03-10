@@ -7,7 +7,7 @@ const Countries = () => {
     const [countries, setCountries] = useState([]);
 
     // state declared for visited countries list
-    const [visitedCountires, setVisitedCountries] = useState([]);
+    const [visitedCountries, setVisitedCountries] = useState([]);
 
     // to load data in useEffect
     useEffect(() => {
@@ -21,6 +21,11 @@ const Countries = () => {
     const handleVisitedCountry = country => {
         console.log('Add This To Your Visited Country')
         // console.log(country);
+        //using spread operator all country coping here and add new country
+        const newVisitedCountries = [...visitedCountries, country];
+        // set new visited country by state
+        setVisitedCountries(newVisitedCountries);
+
     }
 
 
@@ -31,9 +36,13 @@ const Countries = () => {
             {/* visited countries list bar */}
             <div>
 
-                <h4>Visited Countries : </h4>
+                <h4>Visited Countries : {visitedCountries.length} </h4>
                 <ul>
-
+                    {
+                        visitedCountries.map(country => <li key={country.cca3}>
+                            {country.name.common}
+                        </li>)
+                    }
                 </ul>
             </div>
             <div className="country-container">
