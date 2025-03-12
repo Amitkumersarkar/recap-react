@@ -1,9 +1,13 @@
 import React from 'react';
-
-const Watch = () => {
+// destructuring watch
+const Watch = ({ watch }) => {
+    //destructure to loading data 
+    const { name, price } = watch;
     return (
         <div>
-            <h2>Watches : </h2>
+            {/* show watch data */}
+            <h2>Watches : {name}</h2>
+            <p>Price : {price}</p>
         </div>
     );
 };
