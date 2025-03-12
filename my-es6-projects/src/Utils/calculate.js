@@ -6,7 +6,7 @@ const add = (first, second) => {
 const multiply = (first, second) => {
     return first * second;
 }
-
+// simple default export
 // export default add;
 
 // export with in array type function using shorthand technique
